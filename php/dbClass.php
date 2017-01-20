@@ -1,6 +1,5 @@
 <?php
-	$db = new Database("localhost", "root", "", "lampShop");
-	//$db = new Database();
+	$db = new Database();
 	class Database{
 		//SELECT z wyborem kategorii
 		//SELECT wyszukujący po tytule

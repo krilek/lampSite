@@ -18,7 +18,7 @@
         var currentPage;
         var currentCategory;
         var currentSearch;
-        function choosePage(page) {
+        /*function choosePage(page) {
             var pageNr = page.innerHTML;
             var searchVal = $("#search").val();
             if(searchVal != "")
@@ -51,7 +51,7 @@
             }else{
                 console.log("TEST");
             }
-        }
+        }*/
         function listCategory(){
             var link = window.location.href;
             if(link.indexOf("cat=") > 0){
@@ -72,10 +72,12 @@
                 },
                 success: function(html) {
                     //GET AMOUNT OF PRODUCTS
-                            var end = html.indexOf("$$");
-                            window.amountOfProducts = html.slice(0,end);
-                            console.log("test\n"+window.amountOfProducts+"\ntest");
-                            $.ajax({
+                            // var end = html.indexOf("$$");
+                            // window.amountOfProducts = html.slice(0,end);
+                            console.log(html);
+                            var test = JSON.parse(html);
+                            console.log(test);
+                            /*$.ajax({
                                 type: "GET",
                                 url: '/php/pageCalc.php',
                                 data: {
@@ -83,23 +85,25 @@
                                 },
                                 success: function(pages) {
                                     console.log(pages);
-                                    $(".pagination").html(pages);
+                                    //var test = JSON.parse(pages);
+                                    //console.log(pages);
+                                    //$(".pagination").html(pages);
                                 }
-                            });
+                            });*/
                         //END
-                    $("#products").fadeOut(null, function() {
+                    /*$("#products").fadeOut(null, function() {
                         $("#products").html(html.slice(end+2));
                     });
                     $("#products").fadeIn(100);
                     $('html, body').animate({
                         scrollTop: 0,
                         scrollLeft: 0,
-                    }, 500);
+                    }, 500);*/
                 }
 
             });
         }
-        function search() {
+        /*function search() {
             var searchVal = $("#search").val();
             var amountOfProducts = 0;
             if(searchVal != "" && searchVal != currentSearch){
@@ -144,9 +148,9 @@
                     }
                 });
             }
-        }
+        }*/
 
-        function addToCart(id, title) {
+        /*function addToCart(id, title) {
             $.ajax({
                 type: "POST",
                 url: '/php/shoppingCart.php',
@@ -157,7 +161,7 @@
                     console.log(title);
                 }
             });
-        }
+        }*/
         </script>
         <style type="text/css">
         button.btn-secondary {

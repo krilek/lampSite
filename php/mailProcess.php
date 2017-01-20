@@ -24,5 +24,7 @@
 <!-- 
 ADD SESSION DESTROY
 IF EMAIL DOESN't HAS DOT DONT SEND, SHOW INFO 
-
+TO DO
+http://php.net/manual/en/function.htmlspecialchars.php
+php filters
 EASY  -  USE FILTER JEEZ-->
