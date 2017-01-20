@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One&subset=latin-ext');
+
+/* On small screens, set height to 'auto' for the grid */
+
+@media screen and (max-width: 767px) {
+     .row.content {
+        height: auto;
+    } 
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1370px;
+    }
+}
+
+@media (min-width: 1530px) {
+    .container {
+        width: 1500px;
+    }
+}
+
+.thumbnail .caption {
+    padding: 0px;
+}
+
+.thumbnail:hover{
+    box-shadow: 2px 2px 10px #ccc;
+}
+body {
+    background-image: url(../img/scribble_light.png);
+    /* This pattern is downloaded from www.subtlepatterns.com If you need more, that's where to get'em. */
+    font-family: 'Hammersmith One', sans-serif;
+}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+.row.content {
+    height: 550px
+}
+
+.jumbotron{
+    margin: 0 !important;
+}
+
+#info {
+    color: white;
+    background-color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contact{
+    background-color: #ddd;
+}
+#footer {
+    background-color: transparent;
+}
+
+#info>.btn-primary:hover {
+    background-color: #f44336;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
+    /* Standard syntax */
+}
+
+
+/* Set gray background color and 100% height */
+
+.sidenav {
+    height: 100%;
+}
+
+.page-header {
+    border-bottom: 1px solid #ddd;
+    margin: 0px 0 20px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+#myCarousel {
+    margin-bottom: 20px;
+    height: 300px;
+}
+
+#mobile-menu-btn{
+    background-color: #ddd;
+    border-color: #aaa;
+    color: #000;
+}
+#mobile-menu-btn>.icon-bar{
+    background-color: #000;
+}
+
+.sidenav>* {
+    border-radius: 0px !important;
+}
+
+ul>li.active>a  {
+    background-color: #ddd !important;
+    color: #000 !important;
+}
+
+ul>li>a{
+     padding: 5px 10px !important; 
+    font-size: 18px;
+    font-weight: 400;
+    background-color: transparent !important;
+    color: #333 !important;
+}
+
+
+
+ul>li>a:hover{
+    background-color: #ccc !important;
+    color: #333 !important;
+}
+
+ul>div>ul{
+    margin-top: 10px;
+    margin-bottom: 10px !important;
+}
+
+.panel-collapse>ul>li>a {
+    padding-left: 30px !important;
+}
+
+.logo-margin {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+ul.nav-pills>li>a {
+    border-radius: 0 !important;
+}
+
+img{
+    max-height: 200px;
+}
